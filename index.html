@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana das Crianças — Central de Investigação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="decorations" aria-hidden="true">
+    <span class="star s1">★</span><span class="star s2">✦</span><span class="star s3">★</span><span class="star s4">✦</span>
+    <span class="balloon b1">🎈</span><span class="balloon b2">🎈</span><span class="balloon b3">🎈</span>
+    <span class="confetti c1">◆</span><span class="confetti c2">◆</span><span class="confetti c3">●</span><span class="confetti c4">●</span><span class="confetti c5">✦</span><span class="confetti c6">◆</span>
+  </div>
+
+  <main class="container">
+    <div class="top-badge">🎉 EVENTO ESPECIAL 🎉</div>
+    <section class="hero">
+      <div class="mascot"><div class="body"><div class="visor"></div><div class="backpack"></div></div><div class="foot left"></div><div class="foot right"></div></div>
+      <div class="title-area">
+        <div class="small-title">🚀 UMA MISSÃO MUITO ESPECIAL 🚀</div>
+        <h1>SEMANA DAS<br><span>CRIANÇAS</span></h1>
+        <p>Prepare-se para uma aventura cheia de desafios, enigmas e surpresas!</p>
+      </div>
+      <div class="mascot mini yellow"><div class="body"><div class="visor"></div><div class="backpack"></div></div><div class="foot left"></div><div class="foot right"></div></div>
+    </section>
+
+    <section class="course-section">
+      <div class="section-heading"><div class="line"></div><div><span>🕵️ PRIMEIRO PASSO</span><h2>Selecione o seu curso</h2><p>Escolha a sua turma para começar a missão!</p></div><div class="line"></div></div>
+      <div class="courses">
+        <button class="course-card robot" onclick="selectCourse('r1')"><div class="icon"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="18" width="36" height="30" rx="8" fill="none" stroke="currentColor" stroke-width="4"/><path d="M32 10v8M27 10h10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="25" cy="31" r="3" fill="currentColor"/><circle cx="39" cy="31" r="3" fill="currentColor"/><path d="M24 40h16" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></div><div><strong>Robótica 1</strong><small>Missão dos robôs</small></div><b>➜</b></button>
+        <button class="course-card robot2" onclick="selectCourse('r2')"><div class="icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M27 8h10l2 7 6 3 6-3 6 6-3 6 3 6-6 6-6-3-6 3-2 7H27l-2-7-6-3-6 3-6-6 3-6-3-6 6-6 6 3 6-3 2-7Z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round" transform="translate(4 4) scale(.875)"/><circle cx="32" cy="32" r="8" fill="none" stroke="currentColor" stroke-width="4"/></svg></div><div><strong>Robótica 2</strong><small>Desafio avançado</small></div><b>➜</b></button>
+        <button class="course-card games" onclick="selectCourse('g1')"><div class="icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M18 23h28c7 0 11 6 12 15l1 8c1 7-7 10-12 4l-6-7H23l-6 7c-5 6-13 3-12-4l1-8c1-9 5-15 12-15Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M19 31v12M13 37h12" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="44" cy="34" r="2.5" fill="currentColor"/><circle cx="50" cy="40" r="2.5" fill="currentColor"/></svg></div><div><strong>Programação de Games 1</strong><small>Missão gamer</small></div><b>➜</b></button>
+        <button class="course-card games2" onclick="selectCourse('g2')"><div class="icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 35V17" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="13" r="7" fill="none" stroke="currentColor" stroke-width="4"/><path d="M20 39h24l6 12H14l6-12Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><circle cx="23" cy="45" r="2.5" fill="currentColor"/><circle cx="41" cy="45" r="2.5" fill="currentColor"/></svg></div><div><strong>Programação de Games 2</strong><small>Desafio gamer</small></div><b>➜</b></button>
+        <button class="course-card info" onclick="selectCourse('i1')"><div class="icon"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="13" y="10" width="38" height="30" rx="3" fill="none" stroke="currentColor" stroke-width="4"/><path d="M8 48h48M23 48l3-8h12l3 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><strong>Informática 1</strong><small>Missão digital</small></div><b>➜</b></button>
+        <button class="course-card info2" onclick="selectCourse('i2')"><div class="icon"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="9" width="44" height="31" rx="3" fill="none" stroke="currentColor" stroke-width="4"/><path d="M32 40v11M22 54h20" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></div><div><strong>Informática 2</strong><small>Desafio digital</small></div><b>➜</b></button>
+      </div>
+    </section>
+    <div class="bottom-message">🔎 <strong>Escolha com atenção!</strong> Cada curso terá desafios diferentes.</div>
+  </main>
+
+  <div id="modal" class="modal"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><div class="modal-icon">🚀</div><span>CURSO SELECIONADO</span><h2 id="selectedCourse"></h2><p>Prontos? A investigação começa agora. 👀</p><button class="continue" onclick="startMission()">COMEÇAR MISSÃO ➜</button></div></div>
+
+  <section id="mission" class="mission-screen" aria-hidden="true">
+    <div class="mission-top"><button class="back-btn" onclick="backHome()">← VOLTAR AOS CURSOS</button><div class="case-label">🕵️ CENTRAL DE INVESTIGAÇÃO</div><div class="progress-wrap"><span id="progressText">ETAPA 1</span><div class="progress"><i id="progressBar"></i></div></div></div>
+    <div class="mission-content">
+      <div class="mission-header"><div class="case-stamp">CASO 001</div><h2 id="missionTitle"></h2><p id="missionIntro"></p></div>
+      <div id="missionCard" class="mission-card"></div>
+    </div>
+  </section>
+
+  <footer>Feito para a nossa <strong>Semana das Crianças</strong> 💛</footer>
+  <script src="script.js?v=11"></script>
+</body>
+</html>
